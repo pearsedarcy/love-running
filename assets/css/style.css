@@ -130,3 +130,18 @@ footer {
     border-bottom: 1px solid #3a3a3a;
   }
 }
+
+/* Footer */
+#social-icons {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#social-icons i {
+  font-size: 160%;
+  padding: 5%;
+  color: #252525;
+}

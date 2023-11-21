@@ -125,10 +125,11 @@ main {
 #reasons h2 {
   font-size: 280%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-#benefits-physical < hr,
-#benefits-mental < hr {
+#benefits-physical hr,
+#benefits-mental hr {
   border-top: 1px solid #3a3a3a;
   margin: 5px 0;
 }
@@ -136,6 +137,25 @@ main {
   padding: 0 20px;
   margin-bottom: 20px;
 }
+
+/* Reasons Image */
+#circle-cover-bg {
+  height: 90vw;
+  width: 90vw;
+  background: url("../images/reasons-image.webp") no-repeat top center / cover;
+  margin-bottom: 20px;
+  /* Makes the image a circle */
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Footer */
 footer {
   background-color: orange;

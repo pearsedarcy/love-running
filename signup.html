@@ -76,11 +76,21 @@
           </label>
           <div class="text-input">
             <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="first_name" /><br />
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              required
+            /><br />
             <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" id="last_name" /><br />
+            <input type="text" name="last_name" id="last_name" required /><br />
             <label for="email_address">Email Address</label>
-            <input type="email" name="email_address" id="email_address" />
+            <input
+              type="email"
+              name="email_address"
+              id="email_address"
+              required
+            />
           </div>
           <div class="radio_buttons">
             <label for="road">Road</label>
@@ -89,6 +99,7 @@
               name="running_preference"
               id="road"
               value="Road"
+              required
             /><br />
             <label for="trail">Trail</label>
             <input

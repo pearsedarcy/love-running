@@ -93,6 +93,8 @@ main {
   /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
   margin-top: 47px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero section */
@@ -176,16 +178,78 @@ main {
 
 /* Form */
 #sign-up {
-  margin: 20px;
+  padding: 20px 10%;
+
+  flex-grow: 1;
+  background: url("../images/signup-image.webp") no-repeat center center;
+  background-size: cover;
+  background-position: 75%;
+}
+#sign-up h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
 }
 #signup-form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
+  color: #fafafa;
+  background-color: rgba(60, 60, 60, 0.6);
+  padding: 30px;
+  /* height: 50%; */
+  align-items: center;
+  border-radius: 10px;
 }
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-input > input {
+  background-color: transparent;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  height: 25px;
+  padding: 0 5px;
+  width: inherit;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.text-input > label {
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin: 5px;
+}
+
 .radio_buttons {
-  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.join_button {
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  font-size: 100%;
+  padding: 15px 32px;
+  align-self: flex-start;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Footer */
@@ -272,6 +336,22 @@ main {
   #photos {
     column-count: 3;
     column-gap: 0;
+  }
+
+  #signup-form {
+    position: absolute;
+    max-width: 400px;
+    margin-top: 150px;
+    left: 10%;
+  }
+
+  .text-input:hover {
+    border-color: #f16c6b;
+  }
+
+  .join_button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
   }
 }
 
